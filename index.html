@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Malo Fremondiere</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="img/blog.png">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            Mon Erasmus <span>en</span> Pologne 
+            <img src="img/pologne.png" alt="Drapeau Pologne">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#blog-feed">Le Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <div class="hero-text">
+            <h2>Bienvenue sur mon blog !</h2>
+            <p>Vous trouverez une vision familiale de mon aventure en Pologne. </p>
+            <a href="#blog-feed" class="btn">Voir le journal de bord</a>
+        </div>
+        <div id="globe-container"></div>
+    </section>
+
+    <section id="blog-feed" class="no-padding">
+        
+        <div class="section-header">
+            <h2 class="section-title">Journal de Voyage</h2>
+        </div>
+
+        <article class="blog-strip">
+            <div class="strip-content">
+                <span class="date">21 Janvier 2026</span>
+                <h3>Réservation du Bus</h3>
+                <p>La dernière chose à faire avant de quitter la France était de réserver le bus. Comme vous pouvez le voir sur l'image suivante, nous avons réservé un bus de Paris à Varsovie pour un voyage de 24 heures !</p>
+                
+                <figure>
+                    <img src="img/ticketBus.png" alt="Billet bus ParisVarsovie" class="content-img ticket-look">
+                    <figcaption>Ticket de bus pour quitter la France.</figcaption>
+                </figure>
+
+                <p>C'est long, mais c'est le début de l'aventure.</p>
+            </div>
+        </article>
+
+        <article class="blog-strip">
+            <div class="strip-content">
+                <span class="date">Décembre 2025</span>
+                <h3>Réservation du logement</h3>
+                <p>Mes amis et moi cherchions principalement un appartement entier avec 3 chambres. 
+                    Nous avons sacrifié du temps sans rien trouver. 
+                    Nous avons ensuite cherché des chambres dans des collocations avant de trouver notre pépite.
+                    Il s'agit de 3 chambres disponibles dans une collocation pour 3. Après avoir chacun réservé une chambre,
+                    l'appartement complet nous appartiendra pendant quelques mois. </p>
+
+                <figure>
+                    <img src="img/chambre1.jpg" alt="Photo Chambre" class="content-img">
+                    <figcaption>Photo de la chambre que j'ai réservé.</figcaption>
+                </figure>
+
+                <p>La date de début des cours est connue : le 23 février. Nous emménagerons donc le 17 février !</p>
+            </div>
+        </article>
+
+        <article class="blog-strip">
+            <div class="strip-content">
+                <span class="date">Septembre 2025</span>
+                <h3>Pourquoi la Pologne ?</h3>
+                <p>Vous vous demandez peut-être pourquoi j'ai choisi cette destination. 
+                    Tout d'abord, une liste de d'écoles était proposée dans une partie des pays d'Europe. 
+                    J'ai comparé le niveau des universités, les matières dispensées et la qualité de vie des pays.
+                    J'ai orienté mon premier choix vers la Pologne, le second vers l'Estonie et le troisième vers les Pays-Bas.
+                    Mon premier choix a été accepté ! 
+                    Je pars donc étudier 5 mois à Varsovie !
+                    Deux amis à moi dans ma promotion ont obtenus la même destination. Nous partons donc à 3.
+                </p>
+            </div>
+        </article>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Malo - Erasmus en Pologne.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

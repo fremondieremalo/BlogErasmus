@@ -1,0 +1,161 @@
+:root {
+    --primary-red: #A6192E;
+    --bg-color: #FDFBF7;
+    --gray-bg: #F0F2F5; /* Le gris clair pour 1 article sur 2 */
+    --text-color: #333;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, nav a { font-family: 'Playfair Display', serif; }
+
+/* Header & Nav */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.logo { font-size: 2.5rem; font-style: italic; margin-bottom: 15px; }
+.logo span { color: var(--primary-red); }
+nav ul { display: flex; justify-content: center; list-style: none; gap: 30px; }
+nav a { text-decoration: none; color: #555; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+nav a:hover { color: var(--primary-red); }
+
+/* Accueil */
+#accueil {
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    min-height: 60vh;
+}
+.hero-text { flex: 1; padding-right: 40px; }
+.hero-text h2 { font-size: 3rem; margin-bottom: 20px; line-height: 1.1; }
+.hero-text p { margin-bottom: 30px; color: #666; font-size: 1.1rem; }
+.btn {
+    padding: 12px 30px;
+    background: var(--primary-red);
+    color: white;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+}
+#globe-container { flex: 1; height: 400px; min-width: 300px; }
+
+/* --- NOUVEAU STYLE BLOG (Bandeaux) --- */
+
+/* Titre de la section blog centré avant la liste */
+.section-header {
+    padding: 60px 20px 30px;
+    text-align: center;
+    background: var(--bg-color); /* Toujours blanc/papier pour le titre */
+}
+.section-title { font-size: 2.5rem; font-style: italic; color: var(--primary-red); }
+
+/* Le conteneur des articles n'a pas de padding latéral pour que la couleur touche les bords */
+.no-padding { padding: 0; border: none; }
+
+/* Style de chaque bandeau d'article */
+.blog-strip {
+    padding: 80px 20px; /* Espace vertical confortable */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* LA LOGIQUE ZÉBRÉE (Blanc / Gris) */
+.blog-strip:nth-child(odd) {
+    background-color: #FFFFFF; /* Blanc pur */
+}
+
+.blog-strip:nth-child(even) {
+    background-color: var(--gray-bg); /* Gris clair */
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Contenu centré dans le bandeau (max-width pour la lecture) */
+.strip-content {
+    max-width: 700px;
+    width: 100%;
+    text-align: left; /* Texte aligné à gauche comme dans la vidéo */
+}
+
+.strip-content h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.strip-content .date {
+    display: block;
+    color: var(--primary-red);
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.strip-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.content-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px 0;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Style spécifique pour le "ticket" si tu veux */
+.ticket-look {
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: white;
+}
+
+figure { margin: 0; }
+figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    height: 40px;          /* Hauteur adaptée au texte */
+    width: auto;           /* Garde les proportions */
+    vertical-align: middle;/* Centre l'image verticalement par rapport au texte */
+    margin-left: 10px;     /* Petit espace entre le texte et le drapeau */
+    border-radius: 4px;    /* (Optionnel) Arrondit un peu les coins */
+}
+
+/* --- TRADUCTEUR & FOOTER --- */
+#traduire { padding: 60px 10%; background: #fff0f0; text-align: center; }
+.translator-box { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+textarea { width: 45%; min-width: 300px; height: 120px; padding: 15px; border: 1px solid #ccc; font-family: 'Lato', sans-serif; resize: none; }
+.translate-btn { border: none; cursor: pointer; }
+footer { padding: 30px; text-align: center; font-size: 0.8rem; background: #222; color: #fff; }
+
+@media (max-width: 768px) {
+    #accueil { flex-direction: column-reverse; padding: 40px 20px; text-align: center; }
+    .hero-text { padding: 0; }
+    #globe-container { width: 100%; height: 300px; }
+    .strip-content h3 { font-size: 1.5rem; }
+    textarea { width: 100%; }
+}
