@@ -28,14 +28,24 @@
         </nav>
     </header>
 
-    <section id="accueil">
+<section id="accueil">
+    <div class="hero-left">
         <div class="hero-text">
             <h2>Bienvenue sur mon blog !</h2>
             <p>Embarquez avec moi pour une immersion au cœur de mon aventure polonaise, partagée avec ma famille et mes amis.</p>
-            <a href="#blog-feed" class="btn">Voir le journal de bord</a>
+            
+            <div class="trophy-zone">
+                <img src="img/photoMoiMain.png" alt="Malo" class="malo-photo">
+                <div id="malo-socle-container"></div>
+            </div>
+
         </div>
+    </div>
+
+    <div class="hero-right">
         <div id="globe-container"></div>
-    </section>
+    </div>
+</section>
 
     <section id="blog-feed" class="no-padding">
         
@@ -47,14 +57,30 @@
             <div class="strip-content">
                 <span class="date">17 Février 2026 - 21h</span>
                 <h3>Premier soir à Varsovie</h3>
-                <p>Premiers pas dans la capitale. La ville surprend par sa modernité et sa propreté exemplaire. Ici, le rythme est marqué par le soleil qui tire sa révérence très tôt, laissant place aux lumières de la ville.</p>
+                <p>Premiers pas dans la capitale. La ville surprend par sa modernité et sa propreté. Ici, le rythme est marqué par le soleil qui se couche très tôt, mettant en avant les nombreuses lumières de la ville.</p>
                 
                 <figure>
                     <video controls class="content-img ticket-look">
                         <source src="img/premiersoirvarsovie.mp4" type="video/mp4">
                         Votre navigateur ne supporte pas la lecture de vidéos.
                     </video>
-                    <figcaption>Arrivée dans la ville de Varsovie.</figcaption>
+                    <figcaption>Première sortie dans la ville de Varsovie.</figcaption>
+                </figure>
+            </div>
+        </article>
+
+        <article class="blog-strip">
+            <div class="strip-content">
+                <span class="date">17 Février 2026 - 18h</span>
+                <h3>Découverte de ma chambre</h3>
+                
+                <p>Bien arrivés dans notre appartement, il est temps de découvrir ma chambre. Elle est conforme aux photos, très spacieuse et confortable ! Le reste de l'appartement est lui aussi fidèle à l'annonce.</p>
+                <figure>
+                    <video controls class="content-img ticket-look">
+                        <source src="img/videochambre.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                    <figcaption>Présentation de ma chambre pour 5 mois.</figcaption>
                 </figure>
             </div>
         </article>
@@ -63,14 +89,14 @@
             <div class="strip-content">
                 <span class="date">17 Février 2026 - 17h</span>
                 <h3>Arrivée à Varsovie !!!</h3>
-                <p>Après un périple de 24 heures en bus, nous y sommes enfin ! Le temps a filé plus vite que prévu. Malgré l'appréhension du voyage, quel soulagement de retrouver toutes mes valises sur le quai.</p>
+                <p>Après un périple de 24 heures en bus, nous y sommes enfin ! Le temps est passé plus vite que prévu. Malgré l'appréhension du voyage, j'ai retrouvé toutes mes valises sur le quai.</p>
                 
                 <figure>
                     <img src="img/arriveeVarosive.jpg" alt="Billet bus ParisVarsovie" class="content-img ticket-look">
                     <figcaption>L'arrivée tant attendue en terre polonaise.</figcaption>
                 </figure>
 
-                <p>Le choc thermique est immédiat : -5°C au thermomètre, mais un ressenti proche des -8°C à cause d'un vent glacial. Direction l'appartement en Uber pour nous mettre au chaud avec nos bagages.</p>
+                <p>Le choc thermique est immédiat : -5°C au thermomètre, mais un ressenti proche des -8°C à cause d'un vent très froid. Direction l'appartement en Uber.</p>
             </div>
         </article>
 
@@ -78,18 +104,18 @@
             <div class="strip-content">
                 <span class="date">16 Février 2026 - Dans la nuit</span>
                 <h3>Traversée de l'Allemagne</h3>
-                <p>Douze heures à traverser l'Allemagne, rythmées par les lumières de Francfort et de Dresde. Une partie du voyage s'est faite dans les bras de Morphée, me faisant manquer quelques escales nocturnes.</p>
+                <p>Douze heures à traverser l'Allemagne, rythmées par les villes de Francfort et de Dresde. J'ai plutôt bien dormi cette nuit dans le bus, environ 6h. J'ai cependant raté des arrêts.</p>
                 
                 <figure>
                     <img src="img/francfurt.jpg" alt="Ville de Francfort" class="content-img ticket-look">
                     <figcaption>Passage par les gratte-ciel de Francfort.</figcaption>
                 </figure>
 
-                <p>C'est à Dresde que la neige a fait sa première apparition. Elle ne nous quittera plus jusqu'à Varsovie, qui en est totalement recouverte.</p>
+                <p>C'est à Dresde que la neige a fait sa première apparition. Elle ne nous quittera plus jusqu'à Varsovie, qui en est partiellement recouverte.</p>
 
                 <figure>
                     <img src="img/dresden.jpg" alt="Ville de Dresde" class="content-img ticket-look">
-                    <figcaption>Dresde sous ses premiers flocons.</figcaption>
+                    <figcaption>Dresde sous la neige.</figcaption>
                 </figure>
             </div>
         </article>
@@ -98,14 +124,14 @@
             <div class="strip-content">
                 <span class="date">16 Février 2026 - 22h</span>
                 <h3>Passage de la frontière allemande</h3>
-                <p>Première frontière franchie. La police allemande a procédé à un contrôle rigoureux de tous les passagers. Une formalité un peu impressionnante, mais tout s'est déroulé sans encombre.</p>
+                <p>Première frontière franchie. La police allemande a procédé à un contrôle rigoureux de tous les passagers. Une formalité un peu impressionnante, mais tout s'est déroulé sans problèmes.</p>
                 
                 <figure>
                     <img src="img/passageAllemagne.JPG" alt="Sarrebruck" class="content-img ticket-look">
                     <figcaption>Première escale à Sarrebruck.</figcaption>
                 </figure>
 
-                <p>Petite pause à Sarrebruck. L'instinct de voyageur prend le dessus : je garde un œil vigilant sur mes valises en soute, la prudence reste de mise !</p>
+                <p>Petite pause à Sarrebruck. Je commence à m'inquiéter pour mes valises dès le premier arrêt !</p>
             </div>
         </article>
 
@@ -113,11 +139,11 @@
             <div class="strip-content">
                 <span class="date">16 Février 2026 - 17h</span>
                 <h3>On est partis !</h3>
-                <p>Stratégie payante : nous avons réservé les places tout à l'avant du bus. Résultat ? Une vue panoramique incroyable, un espace généreux pour les jambes et une température idéale. Le voyage commence sous les meilleurs auspices.</p>
+                <p>Stratégie payante : nous avons réservé les places tout à l'avant du bus. Résultat ? Une vue panoramique incroyable, un espaceconséquent pour les jambes et une température idéale. Le voyage commence bien.</p>
                 
                 <figure>
                     <img src="img/departParis.JPG" alt="Départ Paris" class="content-img ticket-look">
-                    <figcaption>Vue imprenable depuis nos sièges à la sortie de Paris.</figcaption>
+                    <figcaption>Vue depuis nos sièges à la sortie de Paris.</figcaption>
                 </figure>
             </div>
         </article>
@@ -126,7 +152,7 @@
             <div class="strip-content">
                 <span class="date">16 Février 2026 - 16h40</span>
                 <h3>Le grand départ 2</h3>
-                <p>Après une première liaison depuis le Poitou, j'ai retrouvé Hugo, mon futur colocataire, dans un café parisien. Quelques provisions pour la route et nous voici à la gare de Bercy, prêts à embarquer dans le bus pour Varsovie.</p>
+                <p>Après une première liaison depuis Poitiers, j'ai retrouvé Hugo, mon futur colocataire, dans un café parisien. Quelques provisions pour la route et nous voici à la gare de Bercy, prêts à embarquer dans le bus pour Varsovie.</p>
                 
                 <figure>
                     <img src="img/busPourVarsovie.jpg" alt="Bus Paris Varsovie" class="content-img ticket-look">
@@ -139,7 +165,7 @@
             <div class="strip-content">
                 <span class="date">16 Février 2026 - 9h00</span>
                 <h3>Le grand départ</h3>
-                <p>Le réveil sonne à 6h. L'aventure débute réellement sur le quai de la gare de Poitiers. Malgré un léger retard du bus, l'émotion est là au moment de dire au revoir à Louise. Le cœur est un peu lourd, mais l'excitation du départ prend le dessus.</p>
+                <p>Le réveil sonne à 6h. L'aventure débute réellement sur le quai de la gare de Poitiers. Malgré un léger retard du bus, l'émotion est là au moment de dire au revoir à Louise. Le cœur est un peu lourd...</p>
                 
                 <figure>
                     <img src="img/busPourParis.jpg" alt="Bus Poitiers Paris" class="content-img ticket-look">
@@ -154,14 +180,14 @@
             <div class="strip-content">
                 <span class="date">13 Février 2026</span>
                 <h3>Dernier repas en famille</h3>
-                <p>Pour mon anniversaire et mon départ, nous nous sommes réunis autour d'un excellent repas à la nouvelle crêperie d'Échiré. Un moment chaleureux avant le grand saut.</p>
+                <p>Pour mon anniversaire et mon départ, nous nous sommes réunis en famille autour d'un excellent repas à la nouvelle crêperie d'Échiré.</p>
                 
                 <figure>
                     <img src="img/photoCreperie.jpg" alt="Repas famille" class="content-img ticket-look">
                     <figcaption>Derniers instants précieux en famille à Échiré.</figcaption>
                 </figure>
 
-                <p>L'heure des adieux a sonné, le reste de la famille partant pour les pistes de ski dès l'aube. Une séparation émouvante, mais comme on dit : « Ce n'est qu'un au revoir ! »</p>
+                <p>L'heure des adieux a sonné, le reste de la famille partant au ski dès le lendemain. Une séparation émouvante, mais comme on dit : « Ce n'est qu'un au revoir ! »</p>
             </div>
         </article>
 
@@ -169,14 +195,14 @@
             <div class="strip-content">
                 <span class="date">12 Février 2026</span>
                 <h3>Logistique et préparatifs</h3>
-                <p>L'itinéraire se précise. Grâce aux bons conseils de Papy Loulou, j'ai réservé ma navette entre Poitiers et Paris Bercy. La transition entre ma région et la capitale est désormais verrouillée.</p>
+                <p>L'itinéraire se précise. Grâce aux bons conseils de Papy Loulou, j'ai réservé un FlixBus entre Poitiers et Paris Bercy.</p>
                 
                 <figure>
                     <img src="img/ticketbus2.png" alt="Billet bus Paris" class="content-img ticket-look">
-                    <figcaption>Le sésame pour la première étape du voyage.</figcaption>
+                    <figcaption>Le bus pour la première étape du voyage.</figcaption>
                 </figure>
 
-                <p>Le programme est calé : Louise me dépose à Poitiers à 8h. Un départ de la maison à 6h45 qui annonce la couleur des jours à venir !</p>
+                <p>Le programme est calé : Louise me dépose à Poitiers à 8h. Un départ de la maison à 6h45 !</p>
             </div>
         </article>
 
@@ -184,7 +210,7 @@
             <div class="strip-content">
                 <span class="date">21 Janvier 2026</span>
                 <h3>La traversée de l'Europe est réservée</h3>
-                <p>L'étape cruciale est franchie : les billets pour Varsovie sont en poche. 24 heures de route nous attendent. C'est un long périple, mais c'est exactement là que l'aventure Erasmus prend tout son sens.</p>
+                <p>L'étape cruciale est franchie : les billets pour Varsovie sont en poche. 24 heures de route nous attendent. C'est un long périple, mais c'est exactement là que le voyage débutera.</p>
                 
                 <figure>
                     <img src="img/ticketBus.png" alt="Billet Paris Varsovie" class="content-img ticket-look">
@@ -198,7 +224,7 @@
         <article class="blog-strip">
             <div class="strip-content">
                 <span class="date">Décembre 2025</span>
-                <h3>Le QG est trouvé !</h3>
+                <h3>Le logement est trouvé !</h3>
                 <p>Dénicher un logement pour trois fut un véritable défi. Après avoir exploré plusieurs pistes, nous avons finalement trouvé la solution idéale : trois chambres dans une colocation spacieuse.</p>
 
                 <figure>
@@ -214,7 +240,7 @@
             <div class="strip-content">
                 <span class="date">Septembre 2025</span>
                 <h3>Le choix de la Pologne</h3>
-                <p>Pourquoi Varsovie ? Entre les opportunités académiques et la découverte d'une culture dynamique, mon choix s'est rapidement porté sur la Pologne. Cerise sur le gâteau : deux amis de promo m'accompagnent dans cette expatriation de cinq mois.</p>
+                <p>Pourquoi Varsovie ? Entre les opportunités académiques et la découverte d'une culture dynamique, mon choix s'est tourné vers la Pologne. Cerise sur le gâteau : deux amis de promo m'accompagnent dans cette expatriation de cinq mois.</p>
             </div>
         </article>
 
