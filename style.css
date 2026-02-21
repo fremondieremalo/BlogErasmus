@@ -193,9 +193,66 @@ textarea { width: 45%; min-width: 300px; height: 120px; padding: 15px; border: 1
 footer { padding: 30px; text-align: center; font-size: 0.8rem; background: #222; color: #fff; }
 
 @media (max-width: 768px) {
-    #accueil { flex-direction: column-reverse; padding: 40px 20px; text-align: center; }
-    .hero-text { padding: 0; }
-    #globe-container { width: 100%; height: 300px; }
-    .strip-content h3 { font-size: 1.5rem; }
-    textarea { width: 100%; }
+    /* On empile les éléments verticalement */
+    #accueil {
+        flex-direction: column;
+        padding: 120px 20px 40px; /* Espace pour le header fixe */
+        height: auto;
+        min-height: 100vh;
+        justify-content: flex-start;
+    }
+
+    /* Le texte prend toute la largeur et se centre */
+    .hero-left, .hero-right {
+        width: 100%;
+        height: auto;
+        flex: none;
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    /* Adaptation des tailles de police pour mobile */
+    .hero-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+        margin: 0 auto;
+    }
+
+    /* On centre la zone du trophée */
+    .trophy-zone {
+        margin: 40px auto;
+        height: 350px; /* Un peu moins haut sur mobile */
+    }
+
+    .malo-photo {
+        width: 180px; /* Photo un peu plus petite */
+        bottom: 180px; /* Ajustement pour coller au socle */
+    }
+
+    /* La planète vient en dessous */
+    .hero-right {
+        height: 400px;
+        margin-top: -50px;
+    }
+
+    #globe-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Ajustement des articles du blog pour mobile */
+    .strip-content h3 {
+        font-size: 1.6rem;
+    }
+    
+    .strip-content p {
+        font-size: 1rem;
+    }
 }
