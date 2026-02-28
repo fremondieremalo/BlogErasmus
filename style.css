@@ -16,6 +16,10 @@ body {
 
 h1, h2, h3, nav a { font-family: 'Playfair Display', serif; }
 
+/* p { 
+    white-space: pre-line;
+} */
+
 /* Header & Nav */
 header {
     text-align: center;
