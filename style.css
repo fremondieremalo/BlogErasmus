@@ -197,66 +197,81 @@ textarea { width: 45%; min-width: 300px; height: 120px; padding: 15px; border: 1
 footer { padding: 30px; text-align: center; font-size: 0.8rem; background: #222; color: #fff; }
 
 @media (max-width: 768px) {
-    /* On empile les éléments verticalement */
     #accueil {
         flex-direction: column;
-        padding: 120px 20px 40px; /* Espace pour le header fixe */
-        height: auto;
+        padding: 80px 20px 20px; /* Moins de padding en haut */
         min-height: 100vh;
-        justify-content: flex-start;
-    }
-
-    /* Le texte prend toute la largeur et se centre */
-    .hero-left, .hero-right {
-        width: 100%;
-        height: auto;
-        flex: none;
+        justify-content: center;
+        gap: 0; /* On resserre tout */
     }
 
     .hero-text {
         width: 100%;
         text-align: center;
-        margin-top: 0;
+        order: 1; /* Le texte reste en haut */
     }
 
-    /* Adaptation des tailles de police pour mobile */
     .hero-text h2 {
-        font-size: 2.2rem;
+        font-size: 1.8rem; /* Titre plus percutant mais moins encombrant */
+        margin-top: 20px;
     }
 
     .hero-text p {
-        font-size: 1.1rem;
-        margin: 0 auto;
+        font-size: 1rem;
+        padding: 0 10px;
     }
 
-    /* On centre la zone du trophée */
-    .trophy-zone {
-        margin: 40px auto;
-        height: 350px; /* Un peu moins haut sur mobile */
+    /* Le Trophée (Malo) */
+    .hero-left {
+        order: 2;
+        height: 300px; /* Réduit pour éviter trop de scroll */
+        margin-top: -20px;
     }
+
+    .trophy-zone {
+        margin: 50px auto 40px;
+        height: 350px;
+        width: 250px;
+        transform: scale(0.9); /* On réduit légèrement la taille globale */
+    }
+
+    /* .malo-socle-container {
+        margin-top: 100px;
+    } */
 
     .malo-photo {
-        width: 180px; /* Photo un peu plus petite */
-        bottom: 180px; /* Ajustement pour coller au socle */
+        width: 150px; /* Plus petit pour mobile */
+        bottom: 185px; /* Ajuste selon ton nouveau rendu JS */
     }
 
-    /* La planète vient en dessous */
+    /* Le Globe : On le rend plus discret ou on le fusionne */
     .hero-right {
-        height: 400px;
-        margin-top: -50px;
+        order: 3;
+        height: 250px;
+        width: 100%;
+        margin-top: -60px; /* Superposition légère pour un effet de profondeur */
+        z-index: 1;
     }
 
     #globe-container {
+        /* 1. On s'assure que le conteneur prend toute la largeur */
         width: 100%;
-        height: 100%;
+        
+        /* 2. On utilise Flexbox pour centrer le canvas à l'intérieur */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* 3. On gère le scale et la marge */
+        transform: scale(0.8); 
+        margin-top: -80px; /* Ajusté pour éviter le chevauchement trop important */
+        
+        /* On retire text-align qui est inutile ici */
     }
 
-    /* Ajustement des articles du blog pour mobile */
-    .strip-content h3 {
-        font-size: 1.6rem;
-    }
-    
-    .strip-content p {
-        font-size: 1rem;
+    /* Optionnel : S'assurer que le canvas ne dépasse pas */
+    #globe-container canvas {
+        display: block;
+        margin: 0 auto;
     }
 }
