@@ -163,7 +163,15 @@ nav a:hover { color: var(--primary-red); }
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-/* Style spécifique pour le "ticket" si tu veux */
+.content-img2 {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 30px auto; /* C'est ici qu'il faut remplacer le 0 par auto */
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
 .ticket-look {
     border: 1px solid #ddd;
     padding: 5px;
