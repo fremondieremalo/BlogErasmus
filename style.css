@@ -174,6 +174,50 @@ nav a:hover { color: var(--primary-red); }
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
+/* Styles pour le carrousel */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px; /* Optionnel : pour arrondir les angles du carrousel */
+}
+.carousel-slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+.carousel-slide.active {
+    display: block;
+}
+.carousel-slide img {
+    max-width: 100%;
+    height: auto;
+}
+.carousel-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+}
+.carousel-btn.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.carousel-btn:hover {
+    background-color: rgba(0,0,0,0.9);
+}
+
 .ticket-look {
     border: 1px solid #ddd;
     padding: 5px;

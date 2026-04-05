@@ -197,3 +197,23 @@ document.addEventListener('DOMContentLoaded', () => {
         globe.onResize();
     });
 });
+
+
+let slideIndex = 0;
+            
+function changeSlide(n) {
+    let slides = document.getElementsByClassName("carousel-slide");
+    
+    // Retire la classe 'active' de l'image actuelle
+    slides[slideIndex].classList.remove("active");
+    
+    // Calcule le nouvel index
+    slideIndex += n;
+    
+    // Si on dépasse la fin, on revient au début, et inversement
+    if (slideIndex >= slides.length) { slideIndex = 0; }
+    if (slideIndex < 0) { slideIndex = slides.length - 1; }
+    
+    // Ajoute la classe 'active' à la nouvelle image
+    slides[slideIndex].classList.add("active");
+}
